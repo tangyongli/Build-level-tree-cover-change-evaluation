@@ -1,6 +1,17 @@
-This is one record for project: Evaluating Building-Level Tree Cover Change in Southern California Wildland-urban Interface Using High-resolution Satellite Imagery
-# Land Cover Mapping
-+ We mapped 1 m land cover in Southern California WUI areas for years 2010 and 2022 using one attention-based CNNs model and NAIP Imagery.<br>
+
+This repository contains the code used for the analyses presented in the paper.
+>Tang, Yongli, and Chao Fan. "Evaluating building-level tree cover change in Southern California wildland-urban interface using high-resolution satellite imagery." Journal of Environmental Management 380 (2025): 125160. https://doi.org/10.1016/j.jenvman.2025.125160
+
+
+# The code supports the following main steps
+* 1m WUI Land Cover Mapping (2010/2022): Train a spatialattention-based CNNs model locally and infer on Google Earth Engine.
 ![alt text](Assets/Model.png)
-+ The model was trained on local machine and inferenced on  Google earth engine using matric operation. [GEE code](https://code.earthengine.google.com/189bc4ae2b4976ec607a2a5655f73ece?noload=1).<br> 
-+ The mapping result is visible on the [web](https://ee-yl2022.projects.earthengine.app/view/wuilandcover). [GEE code](https://code.earthengine.google.com/467b3af170c64856340ea25aa8343f5a).
+* Cluster buildings to form evaluation units to evaluate tree cover change, considering their shared fire risk and tree cover management responsibility
+* Classify buildings based on spatial arrangement into four types: very dense, dense, scattered, and isolated.
+* Export tree cover data for building clusters(2010&2022) from GEE and join it with individual buildings.
+* Evaluate how building density and new development impact tree cover change (2010-2022) within 10m of individual buildings.
+
+
+
+
+
