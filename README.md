@@ -2,7 +2,7 @@
 This repository contains the code used for the analyses presented in the paper.
 >Tang, Yongli, and Chao Fan. "Evaluating building-level tree cover change in Southern California wildland-urban interface using high-resolution satellite imagery." Journal of Environmental Management 380 (2025): 125160. https://doi.org/10.1016/j.jenvman.2025.125160
 
-![alt text](./assets/graph_abstract.jpg)
+![Graph_abstract](Assets/graph_abstract.jpg)
 
 
 # The code includes the following main steps
